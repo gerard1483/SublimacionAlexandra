@@ -245,9 +245,13 @@ TARJETA
 
     height:230px;
 
-    object-fit:cover;
+    object-fit:contain;
 
     display:block;
+
+    padding:15px;
+
+    background:#fff;
 
 }
 
@@ -1664,5 +1668,52 @@ ESTADÍSTICAS
     background:#D4AF37;
 
     color:white;
+
+}
+
+/* ===========================
+   CORRECCIÓN GENERAL MÓVIL
+=========================== */
+
+html,
+body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+section{
+    overflow:hidden;
+}
+
+@media (max-width:768px){
+
+    header{
+        padding:0 15px;
+    }
+
+    .logo{
+        font-size:28px;
+    }
+
+    .titulo h2{
+        font-size:32px;
+    }
+
+    .titulo p{
+        font-size:16px;
+        padding:0 10px;
+    }
 
 }
