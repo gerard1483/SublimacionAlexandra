@@ -1337,15 +1337,19 @@ BENEFICIOS
 
 .beneficios{
 
+    width:100%;
+
     max-width:1300px;
 
     margin:50px auto 0;
 
     display:grid;
 
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(4,minmax(0,1fr));
 
     gap:30px;
+
+    box-sizing:border-box;
 
 }
 
@@ -1353,23 +1357,16 @@ BENEFICIOS
 
     .beneficios{
 
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:1fr;
 
         gap:20px;
 
-    }
-
-}
-
-@media (max-width:600px){
-
-    .beneficios{
-
-        grid-template-columns:1fr;
+        padding:0 15px;
 
     }
 
 }
+
 
 .beneficio{
 
