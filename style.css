@@ -1349,6 +1349,28 @@ BENEFICIOS
 
 }
 
+@media (max-width:900px){
+
+    .beneficios{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:20px;
+
+    }
+
+}
+
+@media (max-width:600px){
+
+    .beneficios{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
 .beneficio{
 
     background:#fff;
@@ -1362,6 +1384,11 @@ BENEFICIOS
     box-shadow:0 10px 30px rgba(0,0,0,.08);
 
     transition:.35s;
+    box-sizing:border-box;
+
+width:100%;
+
+overflow:hidden;
 
 }
 
